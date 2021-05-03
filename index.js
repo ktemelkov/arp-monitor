@@ -1,4 +1,4 @@
-module.exports = require('bindings')('profinetdcp')
+module.exports = require('bindings')('arpmonitor')
 
 
 module.exports.LinkStatus = Object.freeze({

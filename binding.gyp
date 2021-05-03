@@ -1,7 +1,7 @@
 {
   "targets": [
     {
-      "target_name": "profinetdcp",
+      "target_name": "arpmonitor",
       "sources": [ "src/module.cc", "src/interfaces.cc", "src/arpmonitor.cc", "src/arpmonitorworker.cc" ],
       "include_dirs": [ "<!@(node -p \"require('node-addon-api').include\")" ],
       "cflags_cc": [ "-fno-exceptions", "-Wno-missing-field-initializers" ],

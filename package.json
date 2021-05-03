@@ -1,5 +1,5 @@
 {
-  "name": "arp-monitor",
+  "name": "arpmonitor",
   "version": "1.0.0",
   "description": "ARP monitor NodeJS addon",
   "author": "Kalin Temelkov",
