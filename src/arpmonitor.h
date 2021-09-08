@@ -1,9 +1,11 @@
 #ifndef __ARPMONITOR_H
 #define __ARPMONITOR_H
 
+
 #include <napi.h>
 
 class ArpMonitorWorker;
+
 
 /**
  *
@@ -21,6 +23,10 @@ private:
   Napi::Value Stop(const Napi::CallbackInfo& info);
 
   static void ArpMonitorCallback(const Napi::CallbackInfo& info);
+
+  template <typename T> static void DefaultFini(Napi::Env, T* data) {
+    delete data;
+  }
 
 private:
   ArpMonitorWorker* _worker;

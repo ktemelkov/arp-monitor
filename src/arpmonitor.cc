@@ -48,7 +48,7 @@ Napi::Object ArpMonitor::Init(Napi::Env env, Napi::Object exports) {
     // By default, the value set on the environment here will be destroyed when
     // the add-on is unloaded using the `delete` operator, but it is also
     // possible to supply a custom deleter.
-    env.SetInstanceData<Napi::FunctionReference>(constructor);
+    env.SetInstanceData<Napi::FunctionReference, ArpMonitor::DefaultFini>(constructor);
 
     return exports;
 }
